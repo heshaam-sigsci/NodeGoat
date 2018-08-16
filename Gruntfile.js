@@ -16,19 +16,19 @@ module.exports = function(grunt) {
                 files: JS_FILES,
                 tasks: ["jshint"],
                 options: {
-                    livereload: true
+                    livereload: false
                 }
             },
             html: {
                 files: ["app/views/**"],
                 options: {
-                    livereload: true
+                    livereload: false
                 }
             },
             css: {
                 files: ["app/assets/css/**"],
                 options: {
-                    livereload: true
+                    livereload: false
                 }
             }
         },
