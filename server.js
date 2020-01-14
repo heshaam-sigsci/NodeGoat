@@ -142,7 +142,7 @@ MongoClient.connect(config.db, function(err, db) {
     });
 
     // Insecure HTTP connection
-    http.createServer(app).listen(config.port || 5000, function() {
+    http.createServer(app).listen(process.env.PORT || 5000, function() {
         console.log("Express http server listening on port " + config.port);
     });
 
